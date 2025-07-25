@@ -61,7 +61,7 @@ public class MyApp {
 ```bash
 # Create a new repository on GitHub
 # Clone and add your framework code
-git clone https://github.com/yourusername/java-agent-framework.git
+git clone https://github.com/Naammmdz/java-agent-framework.git
 cd java-agent-framework
 
 # Copy framework files
@@ -72,16 +72,16 @@ cp "D:\FullstackAI\acp\acp\examples\java-agent-framework\README.md" .
 
 ### **Step 2: Update pom.xml with Your Details**
 ```xml
-<groupId>io.github.youractualusername</groupId>
+<groupId>io.github.naammmdz</groupId>
 <artifactId>java-agent-framework</artifactId>
 <version>1.0.0</version>
 
 <!-- Update URLs with your actual GitHub username -->
-<url>https://github.com/youractualusername/java-agent-framework</url>
+<url>https://github.com/Naammmdz/java-agent-framework</url>
 <scm>
-    <connection>scm:git:git://github.com/youractualusername/java-agent-framework.git</connection>
-    <developerConnection>scm:git:ssh://github.com:youractualusername/java-agent-framework.git</developerConnection>
-    <url>https://github.com/youractualusername/java-agent-framework/tree/main</url>
+    <connection>scm:git:git://github.com/Naammmdz/java-agent-framework.git</connection>
+    <developerConnection>scm:git:ssh://github.com:Naammmdz/java-agent-framework.git</developerConnection>
+    <url>https://github.com/Naammmdz/java-agent-framework/tree/main</url>
 </scm>
 ```
 
@@ -92,7 +92,7 @@ Create `~/.m2/settings.xml`:
     <servers>
         <server>
             <id>github</id>
-            <username>youractualusername</username>
+            <username>naammmdz</username>
             <password>your-github-personal-access-token</password>
         </server>
     </servers>
@@ -114,12 +114,12 @@ Users add this to their `pom.xml`:
 <repositories>
     <repository>
         <id>github</id>
-        <url>https://maven.pkg.github.com/youractualusername/java-agent-framework</url>
+        <url>https://maven.pkg.github.com/Naammmdz/java-agent-framework</url>
     </repository>
 </repositories>
 
 <dependency>
-    <groupId>io.github.youractualusername</groupId>
+    <groupId>io.github.naammmdz</groupId>
     <artifactId>java-agent-framework</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -225,7 +225,7 @@ target/
 ```java
 // pom.xml
 <dependency>
-    <groupId>io.github.yourusername</groupId>
+    <groupId>io.github.naammmdz</groupId>
     <artifactId>java-agent-framework</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -288,7 +288,7 @@ public class CustomAgentApp {
 ### **1. Verify Local Installation**
 ```bash
 # Check if installed in local repository
-ls ~/.m2/repository/io/github/yourusername/java-agent-framework/1.0.0/
+ls ~/.m2/repository/io/github/naammmdz/java-agent-framework/1.0.0/
 
 # Should see:
 # - java-agent-framework-1.0.0.jar
