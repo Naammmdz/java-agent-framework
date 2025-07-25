@@ -32,7 +32,7 @@ mvn clean deploy -Plocal
 Add to your project's `pom.xml`:
 ```xml
 <dependency>
-    <groupId>io.github.yourusername</groupId>
+    <groupId>io.github.naammmdz</groupId>
     <artifactId>java-agent-framework</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -131,7 +131,7 @@ Users add this to their `pom.xml`:
 
 ### **Step 1: Setup Sonatype Account**
 1. Create account at [issues.sonatype.org](https://issues.sonatype.org)
-2. Create a JIRA ticket to claim your `io.github.yourusername` groupId
+2. Create a JIRA ticket to claim your `io.github.naammmdz` groupId
 3. Verify your GitHub account ownership
 
 ### **Step 2: Setup GPG Signing**
