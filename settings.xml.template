@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+This is a template for Maven settings.xml file.
+Copy this to ~/.m2/settings.xml and fill in your credentials.
+-->
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <servers>
+        <!-- Maven Central (OSSRH) -->
+        <server>
+            <id>ossrh</id>
+            <username>your-sonatype-username</username>
+            <password>your-sonatype-password</password>
+        </server>
+        
+        <!-- GitHub Packages -->
+        <server>
+            <id>github</id>
+            <username>your-github-username</username>
+            <password>your-github-token</password>
+        </server>
+        
+        <!-- Local repository (no auth needed) -->
+        <server>
+            <id>local-repo</id>
+        </server>
+    </servers>
+
+    <profiles>
+        <profile>
+            <id>ossrh</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <gpg.executable>gpg</gpg.executable>
+                <gpg.passphrase>your-gpg-passphrase</gpg.passphrase>
+            </properties>
+        </profile>
+    </profiles>
+
+</settings>
